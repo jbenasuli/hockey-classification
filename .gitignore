@@ -2,7 +2,7 @@
 .DS_Store
 
 # local-only folders
-working-files/
+local-files/
 project-description/
 data/
 zippedData/
