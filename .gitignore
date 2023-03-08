@@ -4,7 +4,7 @@
 # local-only folders
 local-files/
 project-description/
-data/
+project-data/
 zippedData/
 templates/
 moneypuck/
