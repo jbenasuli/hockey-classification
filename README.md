@@ -26,16 +26,14 @@ While the model itself is an estimator of shot quality, shot quantity is also an
 - Data is comprised of individual shot data from the 2021-2022 NHL season
 - All unblocked, "Fenwick", shots are included in our analysis
   - Blocked shots are not included, as the NHL records the location of the player blocking a shot instead of where the shot was taken for blocks
-- Shot data was sourced from moneypuck.com
+- Shot data was sourced from [moneypuck.com](https://moneypuck.com/data.htm)
   - Moneypuck shot data tracks 124 features for each individual shot instance
-  - Data is compiled by scraping from the ESPN and NHL websites
+  - Data is compiled by scraping the ESPN and NHL websites
   - Includes additional metrics derived from scraped league data
 - Our target variable is Goal
   - This problem is treated as binary classification as we want to know the probability of any given shot to go in (1) or not (0)
 - Features include shot type, shot location, game strength state (i.e. is the shooting team on a powerplay)
   
-Explain your stakeholder audience and dataset choice here
-
 ## Modeling
 - All features included in the model and their individual importances are displayed in chart below 
 
