@@ -21,20 +21,38 @@ While the model itself is an estimator of shot quality, shot quantity is also an
   - Coaches can use it to help optimize their own lineups and to better understand a given opponents' game and plan adjustments accordingly
   - Players can use it to better understand their own performance and gain insights into how they can tweak their own game to produce better individual and in turn team results
 
-### Data and Methodology
+### Data Understanding
+
+Source and Methodology
 
 - Data is comprised of individual shot data from the 2021-2022 NHL season
-- All unblocked, "Fenwick", shots are included in our analysis
-  - Blocked shots are not included, as the NHL records the location of the player blocking a shot instead of where the shot was taken for blocks
 - Shot data was sourced from [moneypuck.com](https://moneypuck.com/data.htm)
   - Moneypuck shot data tracks 124 features for each individual shot instance
   - Data is compiled by scraping the ESPN and NHL websites
   - Includes additional metrics derived from scraped league data
-- Our target variable is Goal
+- All unblocked, "Fenwick", shots are included in our analysis
+  - Blocked shots are not included, as the NHL records the location of the player blocking a shot instead of where the shot was taken for blocks
+- Feature set include variables such as shot type, shot location, game strength state (i.e. is the shooting team on a powerplay)
+- The target variable is Goal
   - This problem is treated as binary classification as we want to know the probability of any given shot to go in (1) or not (0)
-- Features include shot type, shot location, game strength state (i.e. is the shooting team on a powerplay)
+
+Prior to modeling, EDA was performed to identify any potential issues and preprocessing requirements
+
+- Target variable distribution
+  ![goal-no_goal-dist-img](<imgs/goal-no_goal-dist.png>)
+  - Our target variable is highly imbalanced
+  - This imbalance will have to be addressed with sampling techniques during our modeling
+
+- Numeric feature correlation
+  ![feature-heatmap](<imgs/feature-heatmap.png>)  
+  - There aren't any numeric features which immediately stand out as being highly correlated
+  - We will incorporate some categorical variables to see if they have more predictive power
   
+- Handling categorical variables
+  ![shots-taken-by-shot-type]imgs/shots-taken-by-shot-type.png ![goals-scored-by-shot-type]imgs/goals-scored-by-shot-type.png
+
 ## Modeling
+
 - All features included in the model and their individual importances are displayed in chart below 
 
 ### Evaluation
