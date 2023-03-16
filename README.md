@@ -44,7 +44,7 @@ Prior to modeling, EDA was performed to identify any potential issues and prepro
   - This imbalance will have to be addressed with sampling techniques during our modeling
 
 - Numeric feature distribution
-  ![feature-hist](<imgs/feature-heatmap.png>)
+  ![feature-hist](<imgs/feature-histograms.png>)
   - There is a mix of binary and continuous non-normally distributed features in the data
   - StandardScalar will be used to normalize these features for modeling
 
@@ -55,8 +55,10 @@ Prior to modeling, EDA was performed to identify any potential issues and prepro
 
 - Handling categorical variables
   - Shot type is likely an important feature
-  ![shots-taken-by-shot-type](<imgs/shots-taken-by-shot-type.png =50%x>)
-  ![goals-scored-by-shot-type](<imgs/goals-scored-by-shot-type.png =50%x>)
+
+  ![shots-taken-by-shot-type](imgs/shots-taken-by-shot-type.png)
+  ![goals-scored-by-shot-type](<mgs/goals-scored-by-shot-type.png)
+
   - These values will have to be one hot encoded for modeling
   - Man up/down situations also certainly play a role in expected goal generation
     - We use data detailing the number of players on the ice at the time of a shot event to compute a game strength state feature
