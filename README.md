@@ -1,11 +1,12 @@
 # Modeling Expected Goals in the NHL
 
-Building a classification model to value shots in the NHL.
+Building a binary classification model to value shots in the NHL.
 
 ## Overview
 
-Expected goals (xG) models are used to estimate the value of any given shot taken. The value of assigned to a shot is the
+The purpose of an expected goals (xG) models is to estimate the value of any given shot taken. Understanding that shots do not have a uniform chance of scoring, xG models leverage a variety of numeric and categorical data to create valuations for individual shots. The value assigned to a given shot is the probability it results in a goal.
 
+While the model itself is an estimator of shot quality, shot quantity is also an important feature in determining expected goals. For a given time period, the total expected goals is sum of all the individual shot xG values. e.g. The sum of a player's individual xG values for a game is that player's total xG generated for the game, and adding in the totals for each teammate results in the team's expected goals for the game.
 
 ## Business and Data Understanding
 
