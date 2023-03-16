@@ -55,7 +55,7 @@ Prior to modeling, EDA was performed to identify any potential issues and prepro
 - Numeric feature correlation
   <!-- ![feature-heatmap](<imgs/feature-heatmap.png>) -->
   <img src='imgs/feature-heatmap.png' width='75%' height='75%'>
-  
+
   - There aren't any numeric features which immediately stand out as being highly correlated
   - We will incorporate some categorical variables to see if they have more predictive power
 
@@ -85,9 +85,7 @@ Basic logistic regression
   - Test accuracy: 0.93
   - Test AUC-ROC score: 0.756
   - Test log loss score: 0.228
-
-- 
-
+  <img src='imgs/base-logreg-cm.png' width='50%' height='50%'>
 
 ### Evaluation
 
