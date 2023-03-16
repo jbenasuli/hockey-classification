@@ -55,8 +55,8 @@ Prior to modeling, EDA was performed to identify any potential issues and prepro
 
 - Handling categorical variables
   - Shot type is likely an important feature
-  ![shots-taken-by-shot-type](<imgs/shots-taken-by-shot-type.png>)
-  ![goals-scored-by-shot-type](<imgs/goals-scored-by-shot-type.png>)
+  ![shots-taken-by-shot-type](imgs/shots-taken-by-shot-type.png =50%x)
+  ![goals-scored-by-shot-type](imgs/goals-scored-by-shot-type.png =50%x)
   - These values will have to be one hot encoded for modeling
   - Man up/down situations also certainly play a role in expected goal generation
     - We use data detailing the number of players on the ice at the time of a shot event to compute a game strength state feature
@@ -64,7 +64,21 @@ Prior to modeling, EDA was performed to identify any potential issues and prepro
 
 ## Modeling
 
-- All features included in the model and their individual importances are displayed in chart below.
+### Overview
+
+To handle this binary classification problem, we trained and tested several different models. Various hyperparameters for each model were tuned in order to optimize performance. Pipelines were constructed to handle categorical and numerical features to ensure workflow integrity and reproducibility.
+
+### Models
+
+Basic logistic regression
+- We deployed an out of the box logistic regression model to serve as our baseline
+- Scoring:
+  - Test accuracy: 0.93
+  - Test AUC-ROC score: 0.756
+  - Test log loss score: 0.228
+
+- 
+
 
 ### Evaluation
 
