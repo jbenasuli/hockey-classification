@@ -39,17 +39,20 @@ Source and Methodology
 Prior to modeling, EDA was performed to identify any potential issues and preprocessing requirements
 
 - Target variable distribution
-  ![goal-no_goal-dist-img](<imgs/goal-no_goal-dist.png>)
+  <!-- ![goal-no_goal-dist-img](<imgs/goal-no_goal-dist.png>) -->
+  <img src='imgs/goal-no_goal-dist.png' width='50%' height='50%'>   
   - Our target variable is highly imbalanced
   - This imbalance will have to be addressed with sampling techniques during our modeling
 
 - Numeric feature distribution
-  ![feature-hist](<imgs/feature-histograms.png>)
+  <!-- ![feature-hist](<imgs/feature-histograms.png>) -->
+  <img src='imgs/feature-histograms.png' width='75%' height='75%'>   
   - There is a mix of binary and continuous non-normally distributed features in the data
   - StandardScalar will be used to normalize these features for modeling
 
 - Numeric feature correlation
-  ![feature-heatmap](<imgs/feature-heatmap.png>)  
+  <!-- ![feature-heatmap](<imgs/feature-heatmap.png>) -->
+  <img src='imgs/feature-heatmap.png' width='75%' height='75%'>   
   - There aren't any numeric features which immediately stand out as being highly correlated
   - We will incorporate some categorical variables to see if they have more predictive power
 
