@@ -75,18 +75,11 @@ Prior to modeling, EDA was performed to identify any potential issues and prepro
 
 ## Repo Structure
 
-├──imgs
-├──.gitignore
-├──NHL-Expected-Goals-Notebook.pdf
-├──NHL-Expected-Goals-Presentation.pdf
-├──NHL-Expected-Goals.ipynb
-└──README.md
-
-```
-├── Data
-├── Images
+'''
+├── imgs
 ├── .gitignore
-├── Slides.pdf
-├── Classification.ipynb
+├── NHL-Expected-Goals-Notebook.pdf
+├── NHL-Expected-Goals-Presentation.pdf
+├── NHL-Expected-Goals.ipynb
 └── README.md
-```
+'''
