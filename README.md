@@ -57,12 +57,8 @@ Prior to modeling, EDA was performed to identify any potential issues and prepro
   - Shot type is likely an important feature
 
   ![shots-taken-by-shot-type]<img src='imgs/shots-taken-by-shot-type.png' width='50%' height='50%'>
-  ![goals-scored-by-shot-type](imgs/goals-scored-by-shot-type.png)
+  ![goals-scored-by-shot-type]<img src='imgs/goals-scored-by-shot-type.png' width='50%' height='50%'>
 
-<img src='imgs/shots-taken-by-shot-type.png' width='50%' height='50%'>
-
-|First Image|Second Image|
-|:-:|:-:|
 |![shots-taken-by-shot-type](imgs/shots-taken-by-shot-type.png)|![goals-scored-by-shot-type](imgs/goals-scored-by-shot-type.png)|
 
 These values will have to be one hot encoded for modeling
