@@ -49,7 +49,7 @@ Prior to modeling, EDA was performed to identify any potential issues and prepro
   - We will incorporate some categorical variables to see if they have more predictive power
   
 - Handling categorical variables
-  ![shots-taken-by-shot-type](<imgs/shots-taken-by-shot-type.png>) [goals-scored-by-shot-type](<imgs/goals-scored-by-shot-type.pn>)
+  ![shots-taken-by-shot-type](<imgs/shots-taken-by-shot-type.png>) [goals-scored-by-shot-type](<imgs/goals-scored-by-shot-type.png>)
 
 ## Modeling
 
