@@ -59,7 +59,6 @@ Prior to modeling, EDA was performed to identify any potential issues and prepro
   ![shots-taken-by-shot-type](imgs/shots-taken-by-shot-type.png)
   ![goals-scored-by-shot-type](imgs/goals-scored-by-shot-type.png)
 
-|First Image|Second Image|
 |:-:|:-:|
 |![shots-taken-by-shot-type](imgs/shots-taken-by-shot-type.png)|![goals-scored-by-shot-type](imgs/goals-scored-by-shot-type.png)|
 
