@@ -80,19 +80,58 @@ To handle this binary classification problem, we trained and tested several diff
 ### Models
 
 Basic logistic regression
+
 - We deployed an out of the box logistic regression model to serve as our baseline
 - Scoring:
   - Test accuracy: 0.93
   - Test AUC-ROC score: 0.756
   - Test log loss score: 0.228
-  <img src='imgs/base-logreg-cm.png' width='50%' height='50%'>
+  <img src='imgs/base-logreg-cm.png' width='60%' height='60%'>
+
+Random Forest Model
+
+- We deployed an out of the box RandomForestClassifier model next
+- The scores were similar to that of the basic logistic regression
+- We leveraged RandomForestClassifier module to look at the importances of our features
+  <img src='imgs/Random-Forrest-Feature-Importances.png' width='60%' height='60%'>
+
+
 
 ### Evaluation
 
+The metrics used to evaluate our models are AUC-ROC and log loss
+
+- Both AUC-ROC and log loss are common metrics used to score classification models
+- Generally, the closer AUC-ROC is to 1 and the closer log loss is to 0 the better
+- AUC-ROC measures the models ability to correctly classify our targets
+- Log loss measures how close the model's predictions are to the actual labels - i.e. the model's predictive power
+- Given the imbalanced nature of the data, we are using both metrics to check for instances where one type of quality is being sacrificed for another
+- From our research, industry benchmarks for the scores are as follows:
+  - ROC-AUC score >= .77
+  - Log loss =< .20
+
 ## Conclusion
 
+### Observations
+
+- Modeling publicly available data can provide actionable insight for coaches and players, but there is room for improvement
+- Only our basic tests achieved scores in line with our benchmark
+  - Despite scoring well, those models struggled with predicting true positives
+- More work needs to be done to reduce the number of false negatives
+- While subsetting the data produced decent results, log loss jumped significantly
+  - Such high levels of log loss call the predictive capability of those models into question
+
 ### Future Recommendations
-- 
+
+- Use several years worth of data
+  - If this prevents us from having to subset the sample data, it should allow us to maintain acceptable log loss levels 
+- Revisit feature selection
+- Construct separate models for different game strength classes 
+  - Different strengths dominates feature importance, but majority of game is played even strength
+  - Feature importance might differ between states 
+- Use team proprietary data 
+  - Introduce other features public data does not account for
+  - Proprietary data could well be better than league data and provide an edge
 
 ## Repo Structure
 
