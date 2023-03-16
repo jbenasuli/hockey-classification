@@ -63,10 +63,11 @@ Prior to modeling, EDA was performed to identify any potential issues and prepro
 |:-:|:-:|
 |![shots-taken-by-shot-type](imgs/shots-taken-by-shot-type.png)|![goals-scored-by-shot-type](imgs/goals-scored-by-shot-type.png)|
 
-  - These values will have to be one hot encoded for modeling
-  - Man up/down situations also certainly play a role in expected goal generation
-    - We use data detailing the number of players on the ice at the time of a shot event to compute a game strength state feature
-    - Each row was imputed with one of the 9 different strength states for even strength, powerplay, and penalty kil situations
+These values will have to be one hot encoded for modeling
+
+- Man up/down situations also certainly play a role in expected goal generation
+  - We use data detailing the number of players on the ice at the time of a shot event to compute a game strength state feature
+  - Each row was imputed with one of the 9 different strength states for even strength, powerplay, and penalty kil situations
 
 ## Modeling
 
