@@ -15,3 +15,12 @@ Explain your stakeholder audience and dataset choice here
 ## Conclusion
 
 ### Future Recommendations
+
+## Repo Structure
+
+├── imgs
+├── .gitignore
+├── NHL-Expected-Goals-Notebook.pdf
+├── NHL-Expected-Goals-Presentation.pdf
+├── NHL-Expected-Goals.ipynb
+└── README.md
