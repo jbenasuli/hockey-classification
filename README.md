@@ -56,9 +56,8 @@ Prior to modeling, EDA was performed to identify any potential issues and prepro
 - Handling categorical variables
   - Shot type is likely an important feature
 
-<img src='imgs/shots-taken-by-shot-type.png' width='40%' height='40%'> <img src='imgs/goals-scored-by-shot-type.png' width='40%' height='40%'>
-
-|![shots-taken-by-shot-type](imgs/shots-taken-by-shot-type.png)|![goals-scored-by-shot-type](imgs/goals-scored-by-shot-type.png)|
+<img src='imgs/shots-taken-by-shot-type.png' width='50%' height='50%'> 
+<img src='imgs/goals-scored-by-shot-type.png' width='50%' height='50%'>
 
 These values will have to be one hot encoded for modeling
 
