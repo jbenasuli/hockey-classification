@@ -57,7 +57,11 @@ Prior to modeling, EDA was performed to identify any potential issues and prepro
   - Shot type is likely an important feature
 
   ![shots-taken-by-shot-type](imgs/shots-taken-by-shot-type.png)
-  ![goals-scored-by-shot-type](<mgs/goals-scored-by-shot-type.png)
+  ![goals-scored-by-shot-type](imgs/goals-scored-by-shot-type.png)
+
+|First Image|Second Image|
+|:-:|:-:|
+|![shots-taken-by-shot-type](imgs/shots-taken-by-shot-type.png)|![goals-scored-by-shot-type](imgs/goals-scored-by-shot-type.png)|
 
   - These values will have to be one hot encoded for modeling
   - Man up/down situations also certainly play a role in expected goal generation
