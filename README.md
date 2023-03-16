@@ -71,6 +71,7 @@ Prior to modeling, EDA was performed to identify any potential issues and prepro
 ## Conclusion
 
 ### Future Recommendations
+- 
 
 ## Repo Structure
 
@@ -80,3 +81,12 @@ Prior to modeling, EDA was performed to identify any potential issues and prepro
 ├──NHL-Expected-Goals-Presentation.pdf
 ├──NHL-Expected-Goals.ipynb
 └──README.md
+
+```
+├── Data
+├── Images
+├── .gitignore
+├── Slides.pdf
+├── Classification.ipynb
+└── README.md
+```
