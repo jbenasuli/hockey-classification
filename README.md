@@ -100,6 +100,7 @@ Random Forest Model w/ SMOTE
 - Using SMOTE to oversample the minority class improved our ability to correctly predict goals
 - However we traded a lot of false negatives for false positives
 - Log loss jumped to .3
+  
   <img src='imgs/smote-rf-cm.png' width='50%' height='50%'>
 
 Random Forest using data subset
