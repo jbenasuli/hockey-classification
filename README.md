@@ -93,9 +93,35 @@ Random Forest Model
 - We deployed an out of the box RandomForestClassifier model next
 - The scores were similar to that of the basic logistic regression
 - We leveraged RandomForestClassifier module to look at the importances of our features
-  <img src='imgs/Random-Forrest-Feature-Importances.png' width='60%' height='60%'>
+  <img src='imgs/Random-Forrest-Feature-Importances.png' width='50%' height='50%'>
 
+Random Forest Model w/ SMOTE
 
+- Using SMOTE to oversample the minority class improved our ability to correctly predict goals
+- However we traded a lot of false negatives for false positives
+- Log loss jumped to .3
+  <img src='imgs/smote-rf-cm.png' width='50%' height='50%'>
+
+Random Forest using data subset
+
+- Since SMOTE did not improve results to our liking, we decided to employ a different sampling solution
+- Took a subset of ‘No Goal’ shots = to the number of shots which scored a goal
+- Scoring:
+  - Test accuracy: 0.67
+  - Test AUC-ROC score: 0.737
+  - Test log loss score: 0.601
+- While our ability to correctly classify true positive outcomes significantly improved, log loss doubled
+  <img src='imgs/rf-sampled-cm.png' width='50%' height='50%'>
+
+Cross Validated Logistic Regression Cross Validation on the subset
+
+- Deployed GridSearchCV to optimize logistic regression models
+- Scoring:
+  - Test accuracy: 0.68
+  - Test AUC-ROC score: 0.756
+  - Test log loss score: 0.586
+- Marginal improvements over the previous attempt with random forest
+  <img src='imgs/sampled-logreg-cv-cm.png' width='50%' height='50%'>
 
 ### Evaluation
 
@@ -128,8 +154,8 @@ The metrics used to evaluate our models are AUC-ROC and log loss
 - Revisit feature selection
 - Construct separate models for different game strength classes 
   - Different strengths dominates feature importance, but majority of game is played even strength
-  - Feature importance might differ between states 
-- Use team proprietary data 
+  - Feature importance might differ between states
+- Use team proprietary data
   - Introduce other features public data does not account for
   - Proprietary data could well be better than league data and provide an edge
 
