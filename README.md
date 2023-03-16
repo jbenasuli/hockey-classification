@@ -56,9 +56,10 @@ Prior to modeling, EDA was performed to identify any potential issues and prepro
 - Handling categorical variables
   - Shot type is likely an important feature
 
-  ![shots-taken-by-shot-type](imgs/shots-taken-by-shot-type.png)
+  ![shots-taken-by-shot-type](<img src='imgs/shots-taken-by-shot-type.png' width='50%' height='50%>)
   ![goals-scored-by-shot-type](imgs/goals-scored-by-shot-type.png)
 
+|First Image|Second Image|
 |:-:|:-:|
 |![shots-taken-by-shot-type](imgs/shots-taken-by-shot-type.png)|![goals-scored-by-shot-type](imgs/goals-scored-by-shot-type.png)|
 
