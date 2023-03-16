@@ -93,7 +93,7 @@ Random Forest Model
 - We deployed an out of the box RandomForestClassifier model next
 - The scores were similar to that of the basic logistic regression
 - We leveraged RandomForestClassifier module to look at the importances of our features
-  <img src='imgs/Random-Forrest-Feature-Importances.png' width='50%' height='50%'>
+  <img src='imgs/Random-Forrest-Feature-Importances.png' width='70%' height='70%'>
 
 Random Forest Model w/ SMOTE
 
